@@ -1,0 +1,22 @@
+body {
+  background: radial-gradient(circle at top, #020617, #000);
+  color: #22ffff;
+}
+
+.controls select {
+  background: #020617;
+  color: #22ffff;
+  border: 1px solid rgba(34, 255, 255, 0.3);
+}
+
+.tile {
+  background: rgba(34, 255, 255, 0.08);
+  border: 1px solid rgba(34, 255, 255, 0.35);
+  box-shadow: 0 0 12px rgba(34, 255, 255, 0.35);
+}
+
+#donateBtn {
+  background: linear-gradient(135deg, #22ffff, #a855f7);
+  color: #000;
+  font-weight: 600;
+}

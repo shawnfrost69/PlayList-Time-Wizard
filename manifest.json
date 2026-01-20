@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Playlist Time Wizard",
+  "description": "Calculate total YouTube playlist duration and watch time at different playback speeds.",
+  "version": "1.0.0",
+
+  "permissions": ["activeTab", "storage"],
+
+  "host_permissions": ["https://www.youtube.com/*"],
+
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["src/content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "icons": {
+    "16": "assets/icons/icons.png",
+    "48": "assets/icons/icons.png",
+    "128": "assets/icons/icons.png"
+  }
+}

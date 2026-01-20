@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Playlist Time</title>
+
+    <!-- Base styles -->
+    <link rel="stylesheet" href="popup.css" />
+
+    <!-- Theme styles (switched dynamically) -->
+    <link id="theme-style" rel="stylesheet" href="../themes/glass.css" />
+  </head>
+
+  <body>
+    <h2>Playlist Duration</h2>
+
+    <!-- 🎨 Theme Selector -->
+    <div class="controls">
+      <select id="themeSelect">
+        <option value="dashboard-soft">Dashboard Soft</option>
+        <option value="linear-glow">Linear Glow</option>
+        <option value="gradient-cards">Gradient Cards</option>
+        <option value="glass">Glass</option>
+        <option value="neon">Neon</option>
+        <option value="dark">Dark</option>
+        <option value="minimal">Minimal</option>
+      </select>
+    </div>
+
+    <!-- Duration output -->
+    <div id="total"></div>
+    <div id="speeds"></div>
+
+    <!-- ☕ Donate Button -->
+    <button id="donateBtn">☕ Buy Me a Coffee</button>
+
+    <!-- Donate Modal -->
+    <div id="donateModal" class="modal hidden">
+      <div class="modal-content">
+        <span id="closeModal">✖</span>
+        <p>Support this project</p>
+        <img
+          src="../../assets/donation/buymeacoffee.png"
+          alt="Buy Me a Coffee QR"
+        />
+        <p style="font-size: 12px; opacity: 0.8">
+          Scan to support development ❤️
+        </p>
+      </div>
+    </div>
+
+    <!-- Popup logic -->
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+:root {
+  --bg: #050510;
+  --tile-bg: rgba(0, 255, 255, 0.12);
+  --text: #00ffff;
+  --accent: #ff00ff;
+  --border: rgba(0, 255, 255, 0.4);
+}
+
+body {
+  background: radial-gradient(circle at top, #111133, #000);
+  color: var(--text);
+}
+
+.tile {
+  background: var(--tile-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 0 10px #00ffff, 0 0 20px rgba(255, 0, 255, 0.4);
+}

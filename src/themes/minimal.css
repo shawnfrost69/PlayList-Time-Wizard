@@ -1,0 +1,17 @@
+:root {
+  --bg: #ffffff;
+  --tile-bg: #f9fafb;
+  --text: #111827;
+  --accent: #2563eb;
+  --border: #e5e7eb;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.tile {
+  background: var(--tile-bg);
+  border: 1px solid var(--border);
+}

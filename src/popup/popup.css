@@ -1,0 +1,123 @@
+/* Base layout */
+body {
+  font-family: Arial, sans-serif;
+  width: 300px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Theme selector */
+.controls {
+  margin-bottom: 12px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Tiles */
+.tile {
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+.tile:hover {
+  transform: scale(1.03);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Donate button */
+#donateBtn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Donate modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  width: 220px;
+}
+
+.modal-content img {
+  width: 180px;
+  margin-top: 8px;
+}
+
+#closeModal {
+  cursor: pointer;
+  float: right;
+  font-size: 14px;
+}
+
+/* Emphasize total duration */
+#total {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Unavailable video note */
+.note {
+  margin: 6px 0;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  background: rgba(255, 165, 0, 0.15);
+}
+
+/* Better spacing for speeds */
+#speeds {
+  margin-top: 6px;
+}
+
+/* Softer tile text */
+.tile {
+  font-size: 13px;
+}

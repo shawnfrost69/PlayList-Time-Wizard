@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: #ffffff;
+}
+
+.controls select {
+  background: rgba(255, 255, 255, 0.85);
+  color: #111;
+}
+
+.tile {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.1)
+  );
+  border: none;
+  backdrop-filter: blur(8px);
+}
+
+#donateBtn {
+  background: #ffffff;
+  color: #111;
+  font-weight: 600;
+}

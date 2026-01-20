@@ -1,0 +1,18 @@
+{
+  "glass": {
+    "name": "Glassmorphism",
+    "file": "glass.css"
+  },
+  "neon": {
+    "name": "Neon Cyber",
+    "file": "neon.css"
+  },
+  "dark": {
+    "name": "Dark Pro",
+    "file": "dark.css"
+  },
+  "minimal": {
+    "name": "Minimal Light",
+    "file": "minimal.css"
+  }
+}
